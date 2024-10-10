@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>"Instituto de Educación Superior Juan Jeuzel"</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+      
+
+        #titulo {
+            Background-color: rgb(2, 209, 255);
+            Margin: 0px;
+            Padding: 80px;
+            position: fixed;
+            text-align: center;
+            top: 0px;
+            width: 100%;
+            color: black;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .imagen1 {
+            position: fixed;
+            top: 8px;
+            left: 10px;
+        }
+
+        .icono {
+            position: fixed;
+            top: 60px;
+            left: 1000px;
+        }
+
+        .inicio {
+            position: fixed;
+            top: 125px;
+            left: 450px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .texto1 {
+            position: fixed;
+            top: 30px;
+            left: 145px;
+        }
+
+        .historia {
+            position: fixed;
+            top: 125px;
+            left: 530px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .carreras {
+            position: fixed;
+            top: 125px;
+            left: 654px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .contacto {
+            position: fixed;
+            top: 125px;
+            left: 900px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .noticias {
+            position: fixed;
+            top: 125px;
+            left: 770px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .body2 {
+            width: 400px;
+            margin: 200px auto;
+        }
+
+        .contenedor {
+            padding: 23px;
+            background-color: rgb(2, 209, 255);
+            width: 1250px;
+            margin: 0;
+            position: relative;
+            top: 200px;
+            left: -448px;
+        }
+
+        .logo {
+            position: relative;
+            top: -20px;
+            left: 500px;
+        }
+
+        .info {
+            position: relative;
+            top: -25px;
+            left: 550px;
+        }
+
+        .redes {
+            position: relative;
+            top: -25px;
+            left: 650px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="titulo"></h1>
+    <img class="imagen1" src="escudo-removebg-preview (1).png" width="150px" />
+    <img class="icono" src="icono.png" width="300px" />
+    <a class="inicio" href="instituto.html">INICIO</a>
+    <a class="historia" href="historia.html">INSTITUCIÓN</a>
+    <a class="carreras" href="carreras.html">CARRERAS</a>
+    <a class="noticias" href="noticias.html">ESTUDIANTES</a>
+    <a class="contacto" href="contato.html">CONTACTO</a>
+    <h1 class="texto1">"Instituto de Educación Superior Juan Jeuzel"</h1>
+    <div class="body2">
+        <h1>Formulario</h1>
+        <form action="/formulario" method=”POST”>
+            <lable>Nombre</lable>
+            <input name="Nombre" placeholder="Nombre" />
+            <br><br>
+            <lable>Contraseña</lable>
+            <input name="Contraseña" placeholder="Contraseña" type="password" required />
+            <br><br>
+            <label>Genero</label>
+            <br>
+            <input name="Genero Femenino" type="radio" />Femenino
+            <input name="Genero Masculino" type="radio" /> Masculino
+            <input name="Genero Masculino" type="radio" /> Prefiero no decirlo
+            <br><br>
+            <lable>Color favorito</lable>
+            <input name="color" type="color" />
+            <br><br>
+            <lable>Fecha de Nacimiento</lable>
+            <input name="fecha" type="date" />
+            <lable>Hora</lable>
+            <input name="hora" type="time" />
+            <br><br>
+            <lable>Localidad</lable>
+            <select name="Localidad">
+                <option>Saenz Peña</option>
+                <option>Avia Terai</option>
+                <option>Campo Largo</option>
+                <option>Corzuela</option>
+                <option>Las Breñas</option>
+            </select>
+            <br><br>
+            <label>Consultas</label><br>
+            <textarea cols="30" rows="5" placeholder="añadir comentario"></textarea>
+            <br><br>
+            <lable>Enviar o reiniciar formulario:</lable>
+            <button type="reset">restablecer</botton>
+                <button type="submit">Enviar Formulario</button>
+        </form>
+        <footer>
+            <div class="contenedor">
+                <p>&copy; 2024 IES Juean Jeuzel. Reserva los derechos de autor</p>
+                <img class="logo" src="logo_ministerio.png" width="200px" />
+                <img class="info" src="info.png" width="100px" />
+                <img class="redes" src="redes.png" width="200px" />
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
